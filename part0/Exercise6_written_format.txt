@@ -1,0 +1,36 @@
+note over browser:
+
+browser expexts post action
+
+end note
+
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+
+
+
+note over browser:
+
+In spa.js-code the browser takes the post data based on 
+
+the event handler activity and create a new note 
+then attaches to the note.json which it received 
+
+from the server and redraw the data.Then send the note to the server.
+
+end note
+
+
+
+note over server:
+
+server respond with status code 201
+
+no more re-direct in this case
+
+end note
+
+
+
+cd desktop
+server->browser: status code 201 (no redirect)
